@@ -1,0 +1,26 @@
+a---
+title: "R Notebook - Warmup Session 3"
+output: html_notebook
+---
+
+Below is a code snippet we'll be using as a warm-up today before getting into the practical -- there are ten errors in the code. See if you can spot them and fix them :)
+
+```{r}
+#install.package("tidyverse")
+library(tidyvers)
+load(magrittr)
+
+sdg <- read_csv("./sdg.csv")
+ss <- read_csv("./daniel/ss_new.csv")
+
+sdg %>% 
+  filter(reg = "EUR") %>% 
+  mutate(ln.gdp = log(gdp) %>% 
+  ggplot(x = ln.gdp, y = mat.mrot, color = lmic) +
+  geom_point() %>% 
+  geom_smooth +
+  theme_bw()
+  
+ss %>% summary(age)
+  
+```
